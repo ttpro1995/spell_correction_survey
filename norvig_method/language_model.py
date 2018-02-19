@@ -27,7 +27,4 @@ def known(input_words):
     :param word: one word token only
     :return: true if known
     """
-    # try :
     return set(w for w in input_words if w in WORDS)
-    # except:
-    #     print("error ", word)

@@ -1,6 +1,7 @@
 from collections import Counter
 from norvig_method.error_model import correction
 from norvig_method.language_model import WORDS, words, P
+import os
 
 def unit_tests():
     assert correction('speling') == 'spelling'  # insert
@@ -64,5 +65,12 @@ def Testset(lines):
 
 if __name__ == "__main__":
     print(unit_tests())
+    spell_testset1 = "spell-testset1.txt"
+    spell_testset2 = "spell-testset2.txt"
+
+    if not os.path.isfile(spell_testset1):
+        spell_testset1 = os.path.join("norvig_method", spell_testset1)
+        spell_testset2 = os.path.join("norvig_method", spell_testset2)
+
     spelltest(Testset(open('spell-testset1.txt')))  # Development set
     spelltest(Testset(open('spell-testset2.txt')))  # Final test set
