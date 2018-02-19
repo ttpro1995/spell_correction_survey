@@ -1,5 +1,6 @@
 ### Norvig Spell Correct 
 (article: http://norvig.com/spell-correct.html )
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ttpro1995/spell_correction_survey/master?filepath=norvig_method%2Fnorvig_demo.ipynb)
 
 ```python 
 # require python3 
